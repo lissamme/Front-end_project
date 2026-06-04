@@ -1,5 +1,4 @@
 * {
-  font-family: 'Inter', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -134,4 +133,46 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
+}
+
+.hero {
+  margin-top: 4.437rem;
+}
+
+.hero__content {
+  display: flex;
+  gap: 2.875rem;
+  margin-bottom: 6.156rem;
+}
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: rgba(33, 33, 33, 1);
+}
+.hero__title {
+  font-size: 2.625rem;
+  font-weight: 700;
+}
+.hero__description {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.hero__button {
+  width: 7.8125rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 121, 138, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.hero__irl {
+  flex-shrink: 0;
+  width: 23.68rem;
+  height: 16.81rem;
+  margin-right: 10.125rem;
 }
