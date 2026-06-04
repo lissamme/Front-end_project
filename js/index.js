@@ -44,24 +44,37 @@ function renderEvents(events) {
             >
 
             <div class="event-card__content">
-
                 <h3 class="event-card__title">
                 ${event.title}
                 </h3>
-
                 <p class="event-card__category">
                 ${event.category} (${event.distance} km)
                 </p>
-
                 <p class="event-card__date">
+                <img
+                    class="event-card__icon"
+                    src="./assets/svg/event/data.svg"
+                    alt="Date"
+                >
                 ${formatEventDate(event.date)}
                 </p>
-
                 <div class="event-card__bottom">
-                <span>${event.attendees} going</span>
-                <span>${event.price}</span>
+                    <span class="event-card__info">
+                        <img
+                        class="event-card__icon"
+                        src="./assets/svg/event/going.svg"
+                        alt="Going"
+                        >
+                        ${event.attendees} going
+                    </span>
+                    <span class="event-card__info">
+                        <img
+                        class="event-card__icon"
+                        src="./assets/svg/event/free.svg"
+                        >
+                        ${event.price}
+                    </span>
                 </div>
-
             </div>
         </article>
     `;

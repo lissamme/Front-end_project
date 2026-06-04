@@ -26,7 +26,7 @@ export const eventsStore = [
     price: "Free",
   },
   {
-    title: "Tech Talks & Quiz: Next-Gen Database Solutions",
+    title: "Tech Talks & Quiz: Next-Gen Database Solutions for Emerging Use Cases",
     description: "Technology meetup",
     date: new Date(2024, 2, 13, 18),
     image:
@@ -91,7 +91,7 @@ export const eventsStore = [
     price: "Free",
   },
   {
-    title: "In-person: Deep Dive into RAG Architectures",
+    title: "In-person: Deep Dive into RAG Architectures (Food served)",
     description: "Technology discussion group",
     date: new Date(2024, 2, 14, 17),
     image:
