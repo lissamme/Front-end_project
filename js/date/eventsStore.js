@@ -10,6 +10,7 @@ export const eventsStore = [
     category: "Business",
     distance: 5,
     section: "near",
+    price: "Free",
   },
   {
     title: "Let's Talk Networking: JPMorgan Chase in Palo Alto",
@@ -22,6 +23,7 @@ export const eventsStore = [
     category: "Business",
     distance: 25,
     section: "near",
+    price: "Free",
   },
   {
     title: "Tech Talks & Quiz: Next-Gen Database Solutions",
@@ -34,6 +36,7 @@ export const eventsStore = [
     category: "Technology",
     distance: 0,
     section: "near",
+    price: "Free",
   },
   {
     title: "INFORMS San Francisco Chapter In-Person Event",
@@ -46,6 +49,7 @@ export const eventsStore = [
     category: "Health and Wellbeing",
     distance: 50,
     section: "near",
+    price: "Free",
   },
   {
     title: "AI Wednesdays - Meet and Greet!",
@@ -58,6 +62,7 @@ export const eventsStore = [
     category: "Technology",
     distance: 5,
     section: "near",
+    price: "Free",
   },
   {
     title: "ROS By-The-Bay March 2024",
@@ -70,6 +75,7 @@ export const eventsStore = [
     category: "Social Activities",
     distance: 15,
     section: "near",
+    price: "Free",
   },
   {
     title: "Free Christian Singles' Dinner",
@@ -82,6 +88,7 @@ export const eventsStore = [
     category: "Hobbies and Passions",
     distance: 10,
     section: "near",
+    price: "Free",
   },
   {
     title: "In-person: Deep Dive into RAG Architectures",
@@ -94,6 +101,7 @@ export const eventsStore = [
     category: "Hobbies and Passions",
     distance: 50,
     section: "near",
+    price: "Free",
   },
   {
     title: "Amazing On-Demand 15 Min Interviews with Top Coaches and Speakers",
@@ -106,6 +114,7 @@ export const eventsStore = [
     category: "Business",
     distance: 25,
     section: "online",
+    price: "Free",
   },
   {
     title: "Vision Pro Developers Online Meetup",
@@ -118,6 +127,7 @@ export const eventsStore = [
     category: "Technology",
     distance: 0,
     section: "online",
+    price: "Free",
   },
   {
     title: "Significant Musical Moments",
@@ -130,6 +140,7 @@ export const eventsStore = [
     category: "Hobbies and Passions",
     distance: 10,
     section: "online",
+    price: "Free",
   },
   {
     title: "FREE Webinar: Introduction to Power BI",
@@ -142,6 +153,7 @@ export const eventsStore = [
     category: "Technology",
     distance: 0,
     section: "online",
+    price: "Free",
   },
 ];
 
