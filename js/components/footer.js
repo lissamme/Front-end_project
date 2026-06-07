@@ -59,38 +59,41 @@ export function Footer() {
             <div class="footer__icons">
 
               <a href="#">
-                <img src="./assets/svg/footer/facebook.svg" alt="Facebook">
+                <img src="./assets/svg/footer/follow/facebook.svg" alt="Facebook">
               </a>
 
               <a href="#">
-                <img src="./assets/svg/footer/twitter.svg" alt="Twitter">
+                <img src="./assets/svg/footer/follow/twitter.svg" alt="Twitter">
               </a>
 
               <a href="#">
-                <img src="./assets/svg/footer/youtube.svg" alt="YouTube">
+                <img src="./assets/svg/footer/follow/youtube.svg" alt="YouTube">
               </a>
 
               <a href="#">
-                <img src="./assets/svg/footer/instagram.svg" alt="Instagram">
+                <img src="./assets/svg/footer/follow/insta.svg" alt="Instagram">
               </a>
 
               <a href="#">
-                <img src="./assets/svg/footer/tiktok.svg" alt="TikTok">
+                <img src="./assets/svg/footer/follow/tiktok.svg" alt="TikTok">
               </a>
 
             </div>
           </div>
 
           <div class="footer__stores">
-            <img
-              src="./assets/svg/footer/google-play.svg"
-              alt="Google Play"
-            >
-
-            <img
-              src="./assets/svg/footer/app-store.svg"
-              alt="App Store"
-            >
+            <a href="#">
+                <img
+                src="./assets/svg/footer/google-play.svg"
+                alt="Google Play"
+                >
+            </a>
+            <a href="#">
+                <img
+                src="./assets/svg/footer/app-store.svg"
+                alt="App Store"
+                >
+            </a>
           </div>
 
         </div>
