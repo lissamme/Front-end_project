@@ -70,7 +70,7 @@ export const eventsStore = [
     date: new Date(2024, 2, 21, 18),
     image:
       "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
-    type: "offline",
+    type: "online",
     attendees: 51,
     category: "Social Activities",
     distance: 15,

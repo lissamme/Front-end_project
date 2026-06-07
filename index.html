@@ -11,6 +11,7 @@
 </head>
 <body>
     <div id="header"></div>
+
     <main class="main">
         <section class="hero">
             <div class="container">
@@ -39,27 +40,301 @@
         <section class="events">
             <div class="container">
                 <div class="events__header">
-                    <div class="events__title-wrapper">
-                        <h2 class="events__title">
-                        Events near
-                        </h2>
-                        <button class="events__location">
-                        Mountain View, CA  <img
+                <div class="events__title-wrapper">
+                    <h2 class="events__title">Events near</h2>
+
+                    <button class="events__location">
+                    Mountain View, CA
+                    <img
                         class="events__image"
                         src="./assets/svg/event/Link_pencil.svg"
                         alt="pencil"
-                        >
+                    >
+                    </button>
+                </div>
+
+                <a href="#" class="events__link">See all events</a>
+                </div>
+
+                <div class="events__grid" id="nearEventsGrid"></div>
+            </div>
+        </section>
+        <section class="events events_online">
+            <div class="container">
+                <div class="events__header">
+                <div class="events__title-wrapper">
+                    <h2 class="events__title">Upcoming online events</h2>
+                </div>
+
+                <a href="#" class="events__link">See all events</a>
+                </div>
+
+                <div class="events__grid" id="onlineEventsGrid"></div>
+            </div>
+        </section>
+        <section class="join-meetup">
+            <div class="container">
+                <div class="join-meetup__content">
+                    <div class="join-meetup__info">
+                        <h2 class="join-meetup__title">
+                        Join Meetup
+                        </h2>
+                        <p class="join-meetup__description">
+                            People use Meetup to meet new people, learn new things, find support, get out of their
+                            comfort zones, and pursue their passions, together. Membership is free.
+                        </p>
+                        <button class="join-meetup__button">
+                        Sign up
                         </button>
                     </div>
-                    <a href="#" class="events__link">
-                        See all events
-                    </a>
+                    <div class="join-meetup__image--wrapper">
+                        <img
+                        class="join-meetup__image"
+                        src="./assets/svg/join_meetup.svg"
+                        alt="Join Meetup"
+                        >
+                    </div>
                 </div>
-                <div class="events__grid" id="eventsGrid"></div>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="container">
+                <h2 class="categories__title">
+                Explore top categories
+                </h2>
+                <div class="categories__grid">
+                <a href="#" class="categories__card">
+                    <img
+                    class="categories__icon"
+                    src="./assets/svg/categories/travel.svg"
+                    alt="Travel"
+                    >
+                    <span class="categories__name">
+                    Travel and Outdoor
+                    </span>
+                </a>
+                <a href="#" class="categories__card">
+                    <img
+                    class="categories__icon"
+                    src="./assets/svg/categories/social.svg"
+                    alt="Social"
+                    >
+                    <span class="categories__name">
+                    Social Activities
+                    </span>
+                </a>
+                <a href="#" class="categories__card">
+                    <img
+                    class="categories__icon"
+                    src="./assets/svg/categories/hobbies.svg"
+                    alt="Hobbies"
+                    >
+                    <span class="categories__name">
+                    Hobbies and Passions
+                    </span>
+                </a>
+                <a href="#" class="categories__card">
+                    <img
+                    class="categories__icon"
+                    src="./assets/svg/categories/sports.svg"
+                    alt="Sports"
+                    >
+                    <span class="categories__name">
+                    Sports and Fitness
+                    </span>
+                </a>
+                <a href="#" class="categories__card">
+                    <img
+                    class="categories__icon"
+                    src="./assets/svg/categories/health.svg"
+                    alt="Health"
+                    >
+                    <span class="categories__name">
+                    Health and Wellbeing
+                    </span>
+                </a>
+                <a href="#" class="categories__card">
+                    <img
+                    class="categories__icon"
+                    src="./assets/svg/categories/technology.svg"
+                    alt="Technology"
+                    >
+                    <span class="categories__name">
+                    Technology
+                    </span>
+                </a>
+                <a href="#" class="categories__card">
+                    <img
+                    class="categories__icon"
+                    src="./assets/svg/categories/art.svg"
+                    alt="Art"
+                    >
+                    <span class="categories__name">
+                    Art and Culture
+                    </span>
+                </a>
+                <a href="#" class="categories__card">
+                    <img
+                    class="categories__icon"
+                    src="./assets/svg/categories/games.svg"
+                    alt="Games"
+                    >
+                    <span class="categories__name">
+                    Games
+                    </span>
+                </a>
+                </div>
+            </div>
+        </section>
+        <section class="popular-cities">
+            <div class="container">
+                <div class="popular-cities__wrapper">
+                    <h2 class="popular-cities__title">
+                    Popular cities on Meetup
+                    </h2>
+                    <p class="popular-cities__description">
+                    Looking for fun things to do near you? See what Meetup organizers are planning in cities around the country.
+                    </p>
+                </div>
+                <div class="popular-cities__grid">
+                <a href="#" class="popular-cities__card">
+                    <img class="popular-cities__image" src="./assets/img/cities/new_york.jpg" alt="New York">
+                    <h3 class="popular-cities__name">New York</h3>
+                </a>
+                <a href="#" class="popular-cities__card">
+                    <img class="popular-cities__image" src="./assets/img/cities/san_francisco.jpg" alt="San Francisco">
+                    <h3 class="popular-cities__name">San Francisco</h3>
+                </a>
+                <a href="#" class="popular-cities__card">
+                    <img class="popular-cities__image" src="./assets/img/cities/chicago.jpg" alt="Chicago">
+                    <h3 class="popular-cities__name">Chicago</h3>
+                </a>
+                <a href="#" class="popular-cities__card">
+                    <img class="popular-cities__image" src="./assets/img/cities/nashville.jpg" alt="Nashville">
+                    <h3 class="popular-cities__name">Nashville</h3>
+                </a>
+                <a href="#" class="popular-cities__card">
+                    <img class="popular-cities__image" src="./assets/img/cities/miami.jpg" alt="Miami">
+                    <h3 class="popular-cities__name">Miami</h3>
+                </a>
+                </div>
+            </div>
+        </section>
+        <section class="how-meetup-works">
+            <div class="container">
+                <h2 class="how-meetup-works__title">
+                How Meetup works
+                </h2>
+                <div class="how-meetup-works__cards">
+                    <div class="how-meetup-works__card">
+                        <img
+                        class="how-meetup-works__icon"
+                        src="./assets/svg/search.svg"
+                        alt="Search"
+                        >
+                        <div class="how-meetup-works__content">
+                            <h3 class="how-meetup-works__card-title">
+                                Discover events and groups
+                            </h3>
+                            <p class="how-meetup-works__description">
+                                See who's hosting local events for all the things you love
+                            </p>
+                            <a href="#" class="how-meetup-works__link">
+                                Search events and groups
+                            </a>
+                        </div>
+                    </div>
+                    <div class="how-meetup-works__card">
+                        <img
+                        class="how-meetup-works__icon"
+                        src="./assets/svg/plus.svg"
+                        alt="Create"
+                        >
+                        <div class="how-meetup-works__content">
+                            <h3 class="how-meetup-works__card-title">
+                                Start a group to host events
+                            </h3>
+                            <p class="how-meetup-works__description">
+                                Create your own Meetup group, and draw from a community of millions
+                            </p>
+                            <a href="#" class="how-meetup-works__link">
+                                Start a group
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="friendships">
+            <div class="container">
+                <h2 class="friendships__title">
+                Friendships are made on Meetup
+                </h2>
+                <p class="friendships__description">
+                Since 2002, members have used Meetup to make new friends, meet like-minded people, spend time on hobbies, and connect with locals over shared interests. Learn how.
+                </p>
+                <div class="friendships__grid">
+                    <article class="friendships__card">
+                        <img
+                        class="friendships__image"
+                        src="./assets/img/friendships/first_article.jpg"
+                        alt="Brunch"
+                        >
+                        <h3 class="friendships__card-title">
+                        I Used Meetup to Make Friends at Brunch
+                        </h3>
+                        <p class="friendships__card-text">
+                        New Jersey-based writer and college student
+                        Brianna Stryker wanted to meet friends in her
+                        hometown. Learn how she used Meetup to make
+                        connections by joining a Girls Night Out Meetup
+                        group.
+                        </p>
+                        <a href="#" class="friendships__link">
+                        Read more
+                        </a>
+                    </article>
+                    <article class="friendships__card">
+                        <img
+                        class="friendships__image"
+                        src="./assets/img/friendships/second_article.jpg"
+                        alt="Friends"
+                        >
+                        <h3 class="friendships__card-title">
+                        How to Turn Casual Connections into Close Friendships
+                        </h3>
+                        <p class="friendships__card-text">
+                        It’s proven that close friendships are harder to
+                        make as an adult. But don’t sweat it: here’s what
+                        you can do to simplify the process.
+                        </p>
+                        <a href="#" class="friendships__link">
+                        Read more
+                        </a>
+                    </article>
+                    <article class="friendships__card">
+                        <img
+                        class="friendships__image"
+                        src="./assets/img/friendships/third_article.jpg"
+                        alt="Friendship"
+                        >
+                        <h3 class="friendships__card-title">
+                        Do You Have the “Right” Number of Friends?
+                        </h3>
+                        <p class="friendships__card-text">
+                        Studies from around the world have tried to help
+                        people answer this question. Learn about the
+                        three tiers of friendship and how to fulfill them.
+                        </p>
+                        <a href="#" class="friendships__link">
+                        Read more
+                        </a>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
-
+    
     <div id="footer"></div>
 
     <script type="module" src="./js/index.js"></script>
