@@ -154,6 +154,11 @@ body {
   font-size: 1rem;
   font-weight: 400;
   cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 .hero__irl {
   flex-shrink: 0;
@@ -631,4 +636,105 @@ body {
   flex-wrap: wrap;
 
   font-size: 0.875rem;
+}
+
+/* EVENTS PAGE */
+
+.events-page {
+  padding-top: 5rem;
+}
+.events-page__list {
+  margin-bottom: 6.25rem;
+}
+.events-page__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.events-page__left {
+  width: 37.75rem;
+}
+.events-page__title {
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 1);
+}
+.events-page__map {
+  width: 21.875rem;
+}
+
+.events-page-card {
+  display: flex;
+  gap: 1rem;
+
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(217, 217, 217, 1);
+}
+.events-page-card:last-child {
+  border-bottom: none;
+}
+.events-page-card:first-child {
+  border-top: 1px solid rgba(217, 217, 217, 1);
+}
+.events-page-card__image {
+  width: 9.9375rem; 
+  height: 5.625rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.events-page-card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.events-page-card__date {
+  padding-top: 0.25rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: rgba(124, 111, 80, 1);
+}
+
+.events-page-card__title {
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+.events-page-card__attendees{ 
+  padding-top: 3rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+.events-page-card__category {
+  margin-top: 0.25rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: rgba(112, 112, 112, 1);
+}
+
+.events-page__filters {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.events-page__filter {
+  border-radius: 1.875rem;
+  background-color: rgba(246, 247, 248, 1);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgba(33, 33, 33, 1);
+  appearance: none;
+  padding: 0 2.5rem 0 1rem;
+  background-image: url("../assets/svg/events-page/any.svg");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  border: none;
+  height: 2.875rem;
 }
