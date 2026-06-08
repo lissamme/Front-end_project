@@ -2,7 +2,7 @@ export function Header() {
   return `
     <header class="header">
             <nav class="navbar">
-                <a href="#" class="navbar__logo">
+                <a href="./index.html" class="navbar__logo">
                     <img src="./assets/svg/logo.svg" alt="Meetup">
                 </a>
                 <div class="navbar__search">
