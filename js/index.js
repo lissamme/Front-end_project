@@ -36,7 +36,7 @@ function renderEvents(events, container) {
 
   events.forEach((event) => {
     container.innerHTML += `
-      <article class="event-card">
+      <article class="event-card event-card__mobile">
         <div class="event-card__image-wrapper">
           <img
             class="event-card__image"
@@ -64,7 +64,19 @@ function renderEvents(events, container) {
           <p class="event-card__category">
             ${event.category} (${event.distance} km)
           </p>
-
+          <p class="event-card__attendees">
+            ${event.attendees} attendees
+          </p>
+          ${event.type === "online" ? `
+            <span class="event-card__mobile-badge">
+              <img
+                class="event-card__badge-icon"
+                src="./assets/svg/event/online.svg"
+                alt="online"
+              >
+              Online Event
+            </span>
+            ` : ""}
           <p class="event-card__date">
             <img
               class="event-card__icon"
@@ -99,15 +111,33 @@ function renderEvents(events, container) {
   });
 }
 
-getEvents().then((events) => {
-  const nearEvents = events.filter((event) => {
+function renderPage(events) {
+  let nearEvents = events.filter((event) => {
     return event.section === "near";
   });
 
-  const onlineEvents = events.filter((event) => {
+  let onlineEvents = events.filter((event) => {
     return event.section === "online";
   });
 
+  const isMobile = window.matchMedia("(max-width: 430px)").matches;
+
+  if (isMobile) {
+    nearEvents = nearEvents.slice(0, 3);
+    onlineEvents = onlineEvents.slice(0, 3);
+  }
+
+  nearEventsGrid.innerHTML = "";
+  onlineEventsGrid.innerHTML = "";
+
   renderEvents(nearEvents, nearEventsGrid);
   renderEvents(onlineEvents, onlineEventsGrid);
+}
+
+getEvents().then((events) => {
+  renderPage(events);
+
+  window.addEventListener("resize", () => {
+    renderPage(events);
+  });
 });

@@ -271,6 +271,12 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
 }
+.event-card__attendees {
+  display: none;
+}
+.event-card__mobile-badge {
+  display: none;
+}
 .event-card__date {
   margin-bottom: 0.75rem;
   font-size: 0.875rem;
@@ -279,6 +285,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.375rem;
+  color: rgba(124, 111, 80, 1);
 }
 .event-card__bottom {
   display: flex;
@@ -316,6 +323,9 @@ body {
   font-weight: 600;
   font-size: 1.75rem;
   line-height: 36px;
+}
+.join-meetup__image--mobile {
+  display: none;
 }
 .join-meetup__description {
   max-width: 41.5rem;
@@ -885,7 +895,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .hero__irl {
@@ -915,4 +925,305 @@ body {
   .hero__button {
     display: none;
   }
+  
+  .events {
+    padding: 0 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .events__link {
+    display: none;
+  }
+  .events__title-wrapper {
+    padding-bottom: 0.75rem;
+  }
+  .events__title {
+    line-height: 24px;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  .events__location {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    padding: 0 0.75rem;
+    border-radius: 0.34rem;
+    font-size: 0.86rem;
+    line-height: 16px;
+  }
+  .events__image {
+  margin-left: 0;
+  }
+  .events__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .event-card {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+  .event-card {
+    height: 5.93rem;
+  }
+  .event-card__mobile {
+    padding-bottom: 6.5rem;
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+  }
+  .event-card__mobile:first-child {
+    padding-top: 0.7rem;
+    border-top: 1px solid rgba(217, 217, 217, 1);
+  }
+  .event-card__mobile:last-child {
+    border-bottom: none;
+  }
+  .event-card__image {
+    width: 6.0625rem; 
+    height: 3.4375rem; 
+  }
+  .event-card__title {
+    order: 2;
+    margin-top: 0.4rem;
+    margin-bottom: 0.1rem;
+    font-weight: 500;
+    font-size: 0.613rem;
+    line-height: 0.91rem;
+  }
+  .event-card__category {
+    order: 3;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.53rem;
+    font-weight: 400;
+  }
+  .event-card__badge {
+    display: none;
+  }
+  .event-card__attendees {
+    display: block;
+    order: 5;
+    margin-top: 1.06rem;
+    font-size: 0.52rem;
+    line-height: 12px;
+    color: rgba(112, 112, 112, 1);
+  }
+  .event-card__mobile-badge {
+    order: 4;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+    margin-top: 0.125rem;
+  }
+  .event-card__badge-icon {
+    width: 0.608rem;
+    height: 0.608rem;
+  }
+  .event-card__icon {
+    display: none;
+  }
+  .event-card__date {
+    order: 1;
+    margin-bottom: 0rem;
+    font-size: 0.53rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+  }
+  .event-card__bottom {
+    display: none;
+  }
+  .join-meetup {
+    margin-bottom: 1rem;
+  }
+  .join-meetup__content {
+    height: 22.25rem;
+    display: block;
+  }
+  .join-meetup__title {
+    font-size: 1.25rem;
+  }
+  .join-meetup__image--mobile {
+    display: block;
+  }
+  .join-meetup__image--wrapper {
+    display: none;
+  }
+  .join-meetup__image {
+    width: 14.875rem;
+    height: 8.5rem;
+  }
+  .join-meetup__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.9rem;
+    margin-left: 0.9rem;
+    margin-bottom: 1.2rem;
+    min-width: 370px;
+  }
+  .join-meetup__description {
+    max-width: 21.5rem;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 24px;
+  }
+  .join-meetup__button {
+    margin: 0 auto;
+  }
+
+  .categories__title {
+    margin-left: 1rem;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .categories__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-left: 4rem;
+  }
+
+  .categories__card {
+    width: 8.43rem;
+    height: 7rem;
+    padding: 0rem;
+  }
+
+  .categories__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .categories__name {
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 500;
+    width: 6.25rem;
+  }
+  .popular-cities__wrapper {
+    margin-left: 1rem;
+  }
+  .popular-cities__title {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+  .popular-cities__description {
+    font-size: 0.75rem;
+    line-height: 26px;
+    margin-top: 0;
+  }
+  .popular-cities__grid {
+    display: grid;
+    flex-direction: column;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .popular-cities__card:last-child {
+    display: none;
+  }
+  .popular-cities__image {
+    width: 9.56rem;
+    height: 9.56rem;
+    margin-bottom: 1rem;
+  }
+  .popular-cities__name {
+    font-size: 0.93rem;
+  }
+  .popular-cities {
+      margin-bottom: 2.3rem;
+  }
+  .how-meetup-works {
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+  }
+  .how-meetup-works__title {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      line-height: 2.25rem;
+  }
+  .how-meetup-works__cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  }
+  .how-meetup-works__card {
+    width: 25rem;
+    height: auto;
+    padding-top: 1rem;
+  }
+  .how-meetup-works__icon {
+    width: 1.56rem;
+    height: 1.56rem;
+  }
+  .how-meetup-works__content {
+    max-width: 23.68rem;
+    margin-top: -0.5rem;
+  }
+  .how-meetup-works__card-title {
+    font-size: 0.75rem;
+    margin-bottom: 0.2rem;
+  }
+  .how-meetup-works__description {
+    font-size: 0.62rem;
+    width: 14rem;
+    line-height: 14px;
+    margin-bottom: 0.2rem;
+  }
+  .how-meetup-works__link {
+    font-size: 0.62rem;
+  }
+  .friendships {
+  margin-bottom: 6rem;
+}
+.friendships__title {
+  margin-left: 1rem;
+  font-size: 1.25rem;
+}
+.friendships__description {
+  display: none;
+}
+.friendships__grid {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.friendships__card {
+  width: 23.5rem;
+}
+.friendships__card:hover {
+  background-color: rgb(239, 239, 239);
+
+}
+.friendships__image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+
+  margin-bottom: 1rem;
+}
+.friendships__card-title {
+  margin-bottom: 0.75rem;
+  max-width: 17.5rem;
+  font-size: 1rem;
+  line-height: 26px;
+}
+.friendships__card-text {
+  margin-bottom: 1rem;
+  max-width: 17.5rem;
+  font-size: 0.75rem;
+  line-height: 26px;
+}
+.friendships__link {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
 }
