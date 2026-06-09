@@ -11,6 +11,12 @@ const dateFilter = document.querySelector("#dateFilter");
 const typeFilter = document.querySelector("#typeFilter");
 const distanceFilter = document.querySelector("#distanceFilter");
 const categoryFilter = document.querySelector("#categoryFilter");
+const filtersButton = document.querySelector(".filters-toggle");
+const filters = document.querySelector(".events-page__filters");
+
+filtersButton.addEventListener("click", () => {
+  filters.classList.toggle("active");
+});
 
 let allEvents = [];
 
@@ -70,7 +76,16 @@ function renderEventsPage(events) {
           <p class="events-page-card__category">
             ${event.category} (${event.distance} km)
           </p>
-
+          ${event.type === "online" ? `
+            <span class="event-card__mobile-badge">
+              <img
+                class="event-card__badge-icon"
+                src="./assets/svg/event/online.svg"
+                alt="online"
+              >
+              Online Event
+            </span>
+            ` : ""}
           <p class="events-page-card__attendees">
             ${event.attendees} attendees
           </p>
