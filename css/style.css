@@ -897,7 +897,6 @@ body {
 
   .hero__irl {
     margin-right: 0;
-    width: 18rem;
     height: auto;
   }
 
@@ -960,7 +959,6 @@ body {
   .friendships__card {
     width: 100%;
   }
-
   .footer__content {
     gap: 2rem;
   }
@@ -1090,7 +1088,7 @@ body {
   }
 
   .hero__description {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     line-height: 1.5rem;
   }
 
