@@ -300,8 +300,6 @@ body {
   width: 1rem;
   height: 1rem;
 }
-
-
 .join-meetup {
   margin-bottom: 4rem;
 }
@@ -838,6 +836,174 @@ body {
     height: 0.9375rem;
 }
 
+/* MEDIA  */
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 0 1rem;
+  }
+  .header {
+    padding: 0 1rem;
+  }
+
+  .navbar {
+    gap: 1rem;
+  }
+
+  .navbar__logo img {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  .navbar__search {
+    max-width: 28rem;
+  }
+
+  .navbar__search-events {
+    width: 14rem;
+  }
+
+  .navbar__search-location {
+    width: 10rem;
+  }
+
+  .navbar__actions {
+    gap: 0.75rem;
+    margin-right: 0;
+  }
+
+  .navbar__lang-btn {
+    font-size: 0.8125rem;
+  }
+
+  .navbar__actions a {
+    font-size: 0.8125rem;
+  }
+
+  .navbar__signup-btn {
+    width: 4.5rem;
+    height: 2rem;
+    font-size: 0.8125rem;
+  }
+
+  .hero__content {
+    gap: 2rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__irl {
+    margin-right: 0;
+    width: 18rem;
+    height: auto;
+  }
+
+  .events__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .event-card {
+    height: auto;
+  }
+
+  .event-card__title {
+    font-size: 1rem;
+  }
+
+  .categories__grid {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+
+  .categories__card {
+    width: 100%;
+    max-width: 8rem;
+  }
+    .join-meetup__info {
+    min-width: auto;
+  }
+
+  .join-meetup__image {
+    max-width: 18rem;
+    height: auto;
+  }
+  .popular-cities__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .popular-cities__image {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .how-meetup-works__cards {
+    flex-direction: column;
+  }
+
+  .how-meetup-works__card {
+    width: 100%;
+    height: auto;
+  }
+
+  .friendships__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .friendships__card {
+    width: 100%;
+  }
+
+  .footer__content {
+    gap: 2rem;
+  }
+
+  .footer__column {
+    width: auto;
+  }
+
+  .footer__divider {
+    width: 100%;
+  }
+  .events-page {
+    padding-top: 3rem;
+  }
+
+  .events-page__content {
+    gap: 2rem;
+  }
+
+  .events-page__left {
+    width: 100%;
+  }
+
+  .events-page__map {
+    width: 18rem;
+    flex-shrink: 0;
+  }
+
+  .events-page__filters {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .events-page__filter {
+    height: 2.5rem;
+    font-size: 0.8125rem;
+  }
+
+  .events-page-card__attendees {
+    padding-top: 1.5rem;
+  }
+}
+
 
 @media (max-width: 430px) {
 
@@ -1073,7 +1239,7 @@ body {
     margin-top: 0.9rem;
     margin-left: 0.9rem;
     margin-bottom: 1.2rem;
-    min-width: 370px;
+    /* min-width: 370px; */
   }
   .join-meetup__description {
     max-width: 21.5rem;
@@ -1099,7 +1265,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin-left: 4rem;
   }
 
   .categories__card {
@@ -1166,7 +1331,6 @@ body {
       gap: 1rem;
   }
   .how-meetup-works__card {
-    width: 25rem;
     height: auto;
     padding-top: 1rem;
   }
@@ -1338,7 +1502,6 @@ body {
 .footer__bottom a {
   display: none;
 }
-
 
 .events-page__map {
   display: none;
