@@ -1371,9 +1371,7 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
-.friendships__card {
-  width: 23.5rem;
-}
+
 .friendships__card:hover {
   background-color: rgb(239, 239, 239);
 
