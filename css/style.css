@@ -343,10 +343,6 @@ body {
   font-weight: 500;
   font-size: 1rem;
   text-align: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
 }
 
 .categories {
@@ -1051,14 +1047,16 @@ body {
     margin-bottom: 1rem;
   }
   .join-meetup__content {
-    height: 22.25rem;
+    height: 21.25rem;
     display: block;
   }
   .join-meetup__title {
+    margin-top: 1rem;
     font-size: 1.25rem;
   }
   .join-meetup__image--mobile {
     display: block;
+    margin: 0 auto;
   }
   .join-meetup__image--wrapper {
     display: none;
@@ -1066,11 +1064,12 @@ body {
   .join-meetup__image {
     width: 14.875rem;
     height: 8.5rem;
+    margin-top: -1.5rem;
   }
   .join-meetup__info {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
     margin-top: 0.9rem;
     margin-left: 0.9rem;
     margin-bottom: 1.2rem;
@@ -1081,11 +1080,14 @@ body {
     font-weight: 400;
     font-size: 0.75rem;
     line-height: 24px;
+    margin-bottom: 1rem;
   }
   .join-meetup__button {
     margin: 0 auto;
   }
-
+  .categories {
+    margin-bottom: 3rem;
+  }
   .categories__title {
     margin-left: 1rem;
     font-size: 1.75rem;

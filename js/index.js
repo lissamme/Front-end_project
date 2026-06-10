@@ -111,33 +111,15 @@ function renderEvents(events, container) {
   });
 }
 
-function renderPage(events) {
-  let nearEvents = events.filter((event) => {
-    return event.section === "near";
-  });
+getEvents().then((events) => {
+  const nearEvents = events.filter(
+    (event) => event.section === "near"
+  );
 
-  let onlineEvents = events.filter((event) => {
-    return event.section === "online";
-  });
-
-  const isMobile = window.matchMedia("(max-width: 430px)").matches;
-
-  if (isMobile) {
-    nearEvents = nearEvents.slice(0, 3);
-    onlineEvents = onlineEvents.slice(0, 3);
-  }
-
-  nearEventsGrid.innerHTML = "";
-  onlineEventsGrid.innerHTML = "";
+  const onlineEvents = events.filter(
+    (event) => event.section === "online"
+  );
 
   renderEvents(nearEvents, nearEventsGrid);
   renderEvents(onlineEvents, onlineEventsGrid);
-}
-
-getEvents().then((events) => {
-  renderPage(events);
-
-  window.addEventListener("resize", () => {
-    renderPage(events);
-  });
 });
