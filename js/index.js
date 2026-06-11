@@ -5,7 +5,8 @@ import { getEvents } from "./date/eventsStore.js";
 document.querySelector("#header").innerHTML = Header();
 document.querySelector("#footer").innerHTML = Footer();
 
-const eventsGrid = document.querySelector("#eventsGrid");
+const nearEventsGrid = document.querySelector("#nearEventsGrid");
+const onlineEventsGrid = document.querySelector("#onlineEventsGrid");
 
 function formatEventDate(date) {
   const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];

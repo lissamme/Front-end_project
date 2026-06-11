@@ -5,6 +5,7 @@ import { getEvents } from "./date/eventsStore.js";
 document.querySelector("#header").innerHTML = Header();
 document.querySelector("#footer").innerHTML = Footer();
 
+
 const eventsPageList = document.querySelector("#eventsPageList");
 
 const dateFilter = document.querySelector("#dateFilter");
